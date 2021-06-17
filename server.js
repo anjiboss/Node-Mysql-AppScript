@@ -12,6 +12,7 @@ const addUser = require("./utils/addUser");
 app.use(express.json())
 app.use(cors())
 
+
 app.get("/api/user", (req, res) => {
   const connection = dbCon(() => console.log("DB Connected"));
   connection.query(
